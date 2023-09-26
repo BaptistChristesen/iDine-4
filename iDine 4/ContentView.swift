@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Text("Hello World")
+                Text("Hello World")
+                Text("Hello World")
+            }
+            .navigationTitle("Menu")
         }
-        .padding()
     }
+    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
 }
 
 #Preview {
