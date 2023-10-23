@@ -21,6 +21,8 @@
 		30806BE22AD7811800B230F4 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BE12AD7811800B230F4 /* ItemRow.swift */; };
 		30806BE42AD78E5100B230F4 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BE32AD78E5100B230F4 /* ItemDetail.swift */; };
 		30806BE62AD791D600B230F4 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BE52AD791D600B230F4 /* OrderView.swift */; };
+		30806BE82AD827B800B230F4 /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30806BE72AD827B800B230F4 /* CheckOutView.swift */; };
+		3091002F2AE6C16000F01AC1 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3091002E2AE6C16000F01AC1 /* BottomBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		30806BE12AD7811800B230F4 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		30806BE32AD78E5100B230F4 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		30806BE52AD791D600B230F4 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		30806BE72AD827B800B230F4 /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
+		3091002E2AE6C16000F01AC1 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,10 @@
 			children = (
 				306CC9072AC3240100DE65AD /* iDine_4App.swift */,
 				306CC9092AC3240100DE65AD /* ContentView.swift */,
+				3091002E2AE6C16000F01AC1 /* BottomBar.swift */,
 				30806BE12AD7811800B230F4 /* ItemRow.swift */,
 				30806BE52AD791D600B230F4 /* OrderView.swift */,
+				30806BE72AD827B800B230F4 /* CheckOutView.swift */,
 				306CC9312AC327E100DE65AD /* Helper.swift */,
 				30806BE32AD78E5100B230F4 /* ItemDetail.swift */,
 				306CC9352AC3280B00DE65AD /* Menu.swift */,
@@ -280,10 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				30806BE42AD78E5100B230F4 /* ItemDetail.swift in Sources */,
+				30806BE82AD827B800B230F4 /* CheckOutView.swift in Sources */,
 				30806BE62AD791D600B230F4 /* OrderView.swift in Sources */,
 				306CC90A2AC3240100DE65AD /* ContentView.swift in Sources */,
 				306CC9082AC3240100DE65AD /* iDine_4App.swift in Sources */,
 				306CC9382AC3281200DE65AD /* Order.swift in Sources */,
+				3091002F2AE6C16000F01AC1 /* BottomBar.swift in Sources */,
 				30806BE22AD7811800B230F4 /* ItemRow.swift in Sources */,
 				306CC9362AC3280B00DE65AD /* Menu.swift in Sources */,
 				306CC9322AC327E100DE65AD /* Helper.swift in Sources */,

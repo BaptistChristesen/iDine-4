@@ -25,7 +25,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Menu")
-            .listStyle(.grouped)
+            .listStyle(GroupedListStyle())
         }
     }
 }

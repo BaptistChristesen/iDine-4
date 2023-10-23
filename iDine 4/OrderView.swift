@@ -11,28 +11,35 @@ struct OrderView: View {
     @EnvironmentObject var order: Order
     var body: some View {
         NavigationStack {
-            List {
-                Section {
-                    ForEach(order.items) { item in
-                        HStack {
-                            Text("\(item.name)")
-                            Spacer()
-                            Text("$\(item.price)")
-                        }
-                    }
-                }
-                
-                Section {
-                    NavigationLink("Place Order") {
-                        Text("Check out")
-                    }
-                }
-            }
-            .navigationTitle("Order")
-        }
+                   List {
+                       Section {
+                           ForEach(order.items) { item in
+                               HStack {
+                                   Text(item.name)
+                                   Spacer()
+                                   Text("$\(item.price)")
+                               }
+                           }
+                           .onDelete(perform: deleteItems)
+                       }
+
+                       Section {
+                           NavigationLink("Place Order") {
+                               CheckOutView()
+                           }
+                       }.disabled(order.items.isEmpty)
+                   }
+                   .navigationTitle("Order")
+                   .toolbar {
+                       EditButton()
+                   }
+               }
+    }
+    func deleteItems(at offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
     }
 }
 
 #Preview {
-    OrderView()
+    OrderView().environmentObject(Order())
 }
